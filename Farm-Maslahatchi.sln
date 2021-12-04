@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farm-Maslahatchi", "Farm-Maslahatchi\Farm-Maslahatchi.csproj", "{8F28BBFB-5E4D-4D93-9878-40AC79134C3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farm-Maslahatchi.Services", "Farm-Maslahatchi.Services\Farm-Maslahatchi.Services.csproj", "{2FBDFE17-CC8E-4FEB-BD94-158ED13C6C6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmMaslahatchi.Services", "Farm-Maslahatchi.Services\FarmMaslahatchi.Services.csproj", "{2FBDFE17-CC8E-4FEB-BD94-158ED13C6C6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmMaslahatchi.Data", "FarmMaslahatchi.Data\FarmMaslahatchi.Data.csproj", "{357DE6AE-D7C7-44FB-80D4-9D5497DDAF8E}"
 EndProject

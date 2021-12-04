@@ -11,7 +11,7 @@ namespace FarmMaslahatchi.Data.Model
     {
         public int Id { get; set; }
         [JsonProperty("G1")]
-        public int PP { get; set; }
+        public string PP { get; set; }
         [JsonProperty("G2")]
         public string XalqaroNomi { get; set; }
         [JsonProperty("G3")]

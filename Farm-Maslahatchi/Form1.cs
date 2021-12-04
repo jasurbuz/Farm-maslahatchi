@@ -18,21 +18,28 @@ namespace Farm_Maslahatchi
     {
         private GenericRepository<DoriNarh> Dori;
         private GenericRepository<DoriSinonim> Sinonim;
+        private IList<DoriSinonim> dorilar;
         public Farm_maslahatchi()
         {
             InitializeComponent();
             Dori = new GenericRepository<DoriNarh>(Constants.DoriNarhId, Constants.DoriNarhVersion);
             Sinonim = new GenericRepository<DoriSinonim>(Constants.DoriSinonimId, Constants.DoriSinonimVersion);
+            Birnima();
+        }
+        private async void Birnima()
+        {
+            dorilar = await Sinonim.GetAll();
         }
         private void Farm_maslahatchi_Load(object sender, EventArgs e)
         {
             
         }
 
-        private async void search_txt_TextChanged(object sender, EventArgs e)
+        private void search_txt_TextChanged(object sender, EventArgs e)
         {
-            var dorilar = await Dori.GetAll();
-            var result = dorilar.Where(p => p.DoriNomi.StartsWith(search_txt.Text));
+            IEnumerable<DoriSinonim> result;
+            if (search_txt.Text.Length > 1)
+                result = dorilar.Where(p => p.SavdoNomiVaSinonimi.Contains(search_txt.Text));
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)

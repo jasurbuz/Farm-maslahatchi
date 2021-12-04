@@ -57,7 +57,7 @@ namespace Farm_Maslahatchi
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.996886F));
@@ -85,7 +85,7 @@ namespace Farm_Maslahatchi
             this.panel1.Controls.Add(this.materialRaisedButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(287, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(661, 26);
             this.panel1.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace Farm_Maslahatchi
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.materialRaisedButton1.Location = new System.Drawing.Point(636, 0);
-            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(2);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -112,7 +112,7 @@ namespace Farm_Maslahatchi
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(287, 65);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(661, 35);
             this.panel2.TabIndex = 6;
@@ -150,7 +150,7 @@ namespace Farm_Maslahatchi
             this.panel3.Controls.Add(this.search_txt);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(2, 65);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(281, 35);
             this.panel3.TabIndex = 7;
@@ -160,7 +160,7 @@ namespace Farm_Maslahatchi
             this.search_txt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.search_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_txt.Location = new System.Drawing.Point(0, 0);
-            this.search_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_txt.Margin = new System.Windows.Forms.Padding(2);
             this.search_txt.Name = "search_txt";
             this.search_txt.Size = new System.Drawing.Size(281, 35);
             this.search_txt.TabIndex = 0;
