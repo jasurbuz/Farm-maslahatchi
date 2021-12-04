@@ -45,7 +45,9 @@
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -72,17 +74,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI Controls\Synonims_UserControl.cs">
+    <Compile Include="UI Controls\DrugPrice_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI Controls\Synonims_UserControl.Designer.cs">
-      <DependentUpon>Synonims_UserControl.cs</DependentUpon>
+    <Compile Include="UI Controls\DrugPrice_UC.Designer.cs">
+      <DependentUpon>DrugPrice_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI Controls\SynonymsItem_UC.cs">
+    <Compile Include="UI Controls\SynonimsItem_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI Controls\SynonymsItem_UC.Designer.cs">
-      <DependentUpon>SynonymsItem_UC.cs</DependentUpon>
+    <Compile Include="UI Controls\SynonimsItem_UC.Designer.cs">
+      <DependentUpon>SynonimsItem_UC.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="UI Controls\DrugList_UserControl.resx">
       <DependentUpon>DrugList_UserControl.cs</DependentUpon>
@@ -100,11 +102,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI Controls\Synonims_UserControl.resx">
-      <DependentUpon>Synonims_UserControl.cs</DependentUpon>
+    <EmbeddedResource Include="UI Controls\DrugPrice_UC.resx">
+      <DependentUpon>DrugPrice_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI Controls\SynonymsItem_UC.resx">
-      <DependentUpon>SynonymsItem_UC.cs</DependentUpon>
+    <EmbeddedResource Include="UI Controls\SynonimsItem_UC.resx">
+      <DependentUpon>SynonimsItem_UC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
