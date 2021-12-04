@@ -16,7 +16,7 @@ namespace Farm_Maslahatchi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Farm_maslahatchi());
         }
     }
 }
