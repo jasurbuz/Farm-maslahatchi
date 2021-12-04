@@ -122,6 +122,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Farm-Maslahatchi.Services\Farm-Maslahatchi.Services.csproj">
+      <Project>{2FBDFE17-CC8E-4FEB-BD94-158ED13C6C6D}</Project>
+      <Name>Farm-Maslahatchi.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FarmMaslahatchi.Data\FarmMaslahatchi.Data.csproj">
+      <Project>{357de6ae-d7c7-44fb-80d4-9d5497ddaf8e}</Project>
+      <Name>FarmMaslahatchi.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.3.0\build\MaterialDesignThemes.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
