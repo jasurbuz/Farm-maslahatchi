@@ -32,19 +32,23 @@ namespace Farm_Maslahatchi
         }
         private void Farm_maslahatchi_Load(object sender, EventArgs e)
         {
-            
+            IEnumerable<DoriSinonim> result;
+            if (search_txt.Text.Length > 1)
+            {
+                result = dorilar.Where(p => p.SavdoNomiVaSinonimi.Contains(search_txt.Text));
+                DrugList_UserControl drugList_User = new DrugList_UserControl();
+                drugList_User.FillUserControl(result);
+            }
         }
 
         private void search_txt_TextChanged(object sender, EventArgs e)
         {
-            IEnumerable<DoriSinonim> result;
-            if (search_txt.Text.Length > 1)
-                result = dorilar.Where(p => p.SavdoNomiVaSinonimi.Contains(search_txt.Text));
+
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); 
         }
     }
 }
