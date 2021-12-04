@@ -17,18 +17,19 @@ namespace Farm_Maslahatchi
         {
             InitializeComponent(); 
         }
-
-        public List<string> DrugSynonyms { get; set; }
         private void Farm_maslahatchi_Load(object sender, EventArgs e)
         {
             
-            DrugList_UserControl drugList = new DrugList_UserControl();
-            drugList.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Controls.Add(drugList, 0, 1);
-            Synonims_UserControl synonims = new Synonims_UserControl(DrugSynonyms);
-            synonims.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Controls.Add(synonims, 1, 1);
+        }
 
+        private void search_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

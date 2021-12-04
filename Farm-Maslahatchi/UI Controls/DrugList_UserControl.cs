@@ -16,20 +16,11 @@ namespace Farm_Maslahatchi
         public DrugList_UserControl()
         {
             InitializeComponent();
-            DrugNames = new List<string>();
         }
-
-        public List<string> DrugNames { get; set; }
 
         private void DrugList_UserControl_Load(object sender, EventArgs e)
         {
             
-            foreach (var drug in DrugNames)
-            {
-                MaterialFlatButton materialFlatButton = new MaterialFlatButton();
-                materialFlatButton.Dock = DockStyle.Top;
-                materialFlatButton.Text = drug;
-            }
         }
     }
 }

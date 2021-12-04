@@ -1,7 +1,7 @@
 ﻿
-namespace Farm_Maslahatchi
+namespace Farm_Maslahatchi.UI_Controls
 {
-    partial class DrugList_UserControl
+    partial class DrugPrice_UC
     {
         /// <summary> 
         /// Required designer variable.
@@ -35,23 +35,23 @@ namespace Farm_Maslahatchi
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 36);
+            this.label1.Size = new System.Drawing.Size(148, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "DrugName";
+            this.label1.Text = "Drug Price";
             // 
-            // DrugList_UserControl
+            // DrugPrice_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.Controls.Add(this.label1);
-            this.Name = "DrugList_UserControl";
-            this.Size = new System.Drawing.Size(396, 38);
-            this.Load += new System.EventHandler(this.DrugList_UserControl_Load);
+            this.Name = "DrugPrice_UC";
+            this.Size = new System.Drawing.Size(152, 35);
             this.ResumeLayout(false);
             this.PerformLayout();
 
