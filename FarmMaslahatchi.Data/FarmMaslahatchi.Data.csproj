@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Model\DoriNarh.cs" />
     <Compile Include="Model\DoriSinonim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
