@@ -24,15 +24,9 @@ namespace Farm_Maslahatchi
             
         }
 
-        public void  FillUserControl(IEnumerable<DoriSinonim> doriSinonims)
+        public void  FillUserControl(DoriSinonim drugName)
         {
-            foreach (var item in doriSinonims)
-            {
-                Label name = new Label();
-                name.Text = item.XalqaroNomi;
-                name.Dock = DockStyle.Top;
-                this.Controls.Add(name);
-            }
+            label1.Text = drugName.SavdoNomiVaSinonimi;
         }
     }
 }

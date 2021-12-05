@@ -38,6 +38,9 @@ namespace Farm_Maslahatchi
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.search_txt = new System.Windows.Forms.TextBox();
+            this.drugList = new System.Windows.Forms.ListBox();
+            this.synonimsList = new System.Windows.Forms.ListBox();
+            this.DoriNarxiList = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -51,19 +54,22 @@ namespace Farm_Maslahatchi
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.drugList, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.synonimsList, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.DoriNarxiList, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.996886F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.234097F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.84224F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(950, 639);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1267, 786);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -71,11 +77,10 @@ namespace Farm_Maslahatchi
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(22, 16, 0, 0);
-            this.label1.Size = new System.Drawing.Size(251, 47);
+            this.label1.Padding = new System.Windows.Forms.Padding(29, 20, 0, 0);
+            this.label1.Size = new System.Drawing.Size(305, 58);
             this.label1.TabIndex = 3;
             this.label1.Text = "Farm Maslahatchi";
             // 
@@ -84,22 +89,22 @@ namespace Farm_Maslahatchi
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
             this.panel1.Controls.Add(this.materialRaisedButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(287, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(383, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 26);
+            this.panel1.Size = new System.Drawing.Size(881, 32);
             this.panel1.TabIndex = 4;
             // 
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(636, 0);
-            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(848, 0);
+            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(25, 26);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(33, 32);
             this.materialRaisedButton1.TabIndex = 0;
             this.materialRaisedButton1.Text = "X";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -111,10 +116,10 @@ namespace Farm_Maslahatchi
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(287, 65);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(383, 80);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(661, 35);
+            this.panel2.Size = new System.Drawing.Size(881, 44);
             this.panel2.TabIndex = 6;
             // 
             // label5
@@ -123,13 +128,12 @@ namespace Farm_Maslahatchi
             this.label5.Dock = System.Windows.Forms.DockStyle.Right;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(449, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(609, 0);
             this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(8, 8, 75, 0);
-            this.label5.Size = new System.Drawing.Size(212, 34);
+            this.label5.Padding = new System.Windows.Forms.Padding(11, 10, 100, 0);
+            this.label5.Size = new System.Drawing.Size(272, 42);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Dori narxlari";
+            this.label5.Text = "Dori haqida";
             // 
             // label2
             // 
@@ -138,43 +142,91 @@ namespace Farm_Maslahatchi
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(75, 8, 0, 0);
-            this.label2.Size = new System.Drawing.Size(191, 34);
+            this.label2.Padding = new System.Windows.Forms.Padding(100, 10, 0, 0);
+            this.label2.Size = new System.Drawing.Size(404, 42);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Sinonimlar";
+            this.label2.Text = "O\'rnini bosuvchi dorilar";
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.search_txt);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(2, 65);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(3, 80);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(281, 35);
+            this.panel3.Size = new System.Drawing.Size(374, 44);
             this.panel3.TabIndex = 7;
             // 
             // search_txt
             // 
+            this.search_txt.BackColor = System.Drawing.Color.DodgerBlue;
+            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.search_txt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.search_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_txt.ForeColor = System.Drawing.Color.White;
             this.search_txt.Location = new System.Drawing.Point(0, 0);
-            this.search_txt.Margin = new System.Windows.Forms.Padding(2);
+            this.search_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(281, 35);
+            this.search_txt.Size = new System.Drawing.Size(374, 41);
             this.search_txt.TabIndex = 0;
             this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
             // 
+            // drugList
+            // 
+            this.drugList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.drugList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.drugList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.drugList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drugList.ForeColor = System.Drawing.Color.White;
+            this.drugList.FormattingEnabled = true;
+            this.drugList.ItemHeight = 29;
+            this.drugList.Location = new System.Drawing.Point(3, 129);
+            this.drugList.Name = "drugList";
+            this.drugList.Size = new System.Drawing.Size(374, 654);
+            this.drugList.TabIndex = 11;
+            this.drugList.SelectedIndexChanged += new System.EventHandler(this.drugList_SelectedIndexChanged);
+            // 
+            // synonimsList
+            // 
+            this.synonimsList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.synonimsList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.synonimsList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.synonimsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.synonimsList.ForeColor = System.Drawing.Color.White;
+            this.synonimsList.FormattingEnabled = true;
+            this.synonimsList.ItemHeight = 29;
+            this.synonimsList.Location = new System.Drawing.Point(383, 129);
+            this.synonimsList.Name = "synonimsList";
+            this.synonimsList.Size = new System.Drawing.Size(437, 654);
+            this.synonimsList.TabIndex = 12;
+            this.synonimsList.SelectedIndexChanged += new System.EventHandler(this.synonimsList_SelectedIndexChanged);
+            // 
+            // DoriNarxiList
+            // 
+            this.DoriNarxiList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.DoriNarxiList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DoriNarxiList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DoriNarxiList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoriNarxiList.ForeColor = System.Drawing.Color.White;
+            this.DoriNarxiList.FormattingEnabled = true;
+            this.DoriNarxiList.ItemHeight = 29;
+            this.DoriNarxiList.Location = new System.Drawing.Point(826, 129);
+            this.DoriNarxiList.Name = "DoriNarxiList";
+            this.DoriNarxiList.Size = new System.Drawing.Size(438, 654);
+            this.DoriNarxiList.TabIndex = 13;
+            // 
             // Farm_maslahatchi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 639);
+            this.ClientSize = new System.Drawing.Size(1267, 786);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Farm_maslahatchi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Farm Maslahatchi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Farm_maslahatchi_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -198,6 +250,9 @@ namespace Farm_Maslahatchi
         private System.Windows.Forms.TextBox search_txt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox drugList;
+        private System.Windows.Forms.ListBox synonimsList;
+        private System.Windows.Forms.ListBox DoriNarxiList;
     }
 }
 

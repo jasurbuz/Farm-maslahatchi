@@ -36,10 +36,11 @@ namespace Farm_Maslahatchi
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 36);
+            this.label1.Size = new System.Drawing.Size(130, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "DrugName";
             // 
@@ -50,7 +51,7 @@ namespace Farm_Maslahatchi
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.Controls.Add(this.label1);
             this.Name = "DrugList_UserControl";
-            this.Size = new System.Drawing.Size(396, 38);
+            this.Size = new System.Drawing.Size(416, 29);
             this.Load += new System.EventHandler(this.DrugList_UserControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -16,5 +16,10 @@ namespace Farm_Maslahatchi.UI_Controls
         {
             InitializeComponent();
         }
+
+        public void directLabel(string drugName)
+        {
+            label1.Text = drugName;
+        }
     }
 }
