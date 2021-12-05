@@ -55,7 +55,7 @@ namespace Farm_Maslahatchi
             Birnima();
         }
 
-        private void search_txt_TextChanged_1(object sender, EventArgs e)
+        private void search_txt_TextChanged(object sender, EventArgs e)
         {
             try
             {
@@ -129,5 +129,7 @@ namespace Farm_Maslahatchi
         {
 
         }
+
+
     }
 }
