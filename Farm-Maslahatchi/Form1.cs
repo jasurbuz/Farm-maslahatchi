@@ -33,15 +33,15 @@ namespace Farm_Maslahatchi
             doriNarxlar = await Dori.GetAll();
             //foreach (var item in doriNarxlar)
             //{
-            //    DoriNarxiList.Items.Add(item.DoriNomi + "\t\t" + item.Narx);
+            //    DoriNarxiList.Items.Add(item.Narx);
             //}
         }
 
         private void chiqarish(IEnumerable<DoriSinonim> doriSinonims)
         {
             DorilarList.Items.Clear();
-            var yuztacha = doriSinonims.Take(200);
-            foreach (var item in yuztacha)
+            //var yuztacha = doriSinonims.Take(200);
+            foreach (var item in doriSinonims)
             {
                 DrugList_UserControl drugList_User = new DrugList_UserControl();
                 drugList_User.FillUserControl(item);
@@ -55,7 +55,7 @@ namespace Farm_Maslahatchi
             Birnima();
         }
 
-        private void search_txt_TextChanged(object sender, EventArgs e)
+        private void search_txt_TextChanged_1(object sender, EventArgs e)
         {
             try
             {
@@ -91,7 +91,7 @@ namespace Farm_Maslahatchi
                     SynonimsItem_UC synonimsItem = new SynonimsItem_UC();
                     synonimsItem.directLabel(syn.SavdoNomiVaSinonimi);
                     synonimsItem.Dock = DockStyle.Top;
-                    SinonimlarList.Items.Add(syn.XalqaroNomi);
+                    SinonimlarList.Items.Add(syn.SavdoNomiVaSinonimi);
                 }
             }
             else
@@ -104,19 +104,30 @@ namespace Farm_Maslahatchi
         {
             try
             {
-                var item = SinonimlarList.SelectedItem.ToString();
-                var result = doriNarxlar.FirstOrDefault(a => a.DoriNomi.Contains(item));
-                DoriNarxiList.Items.Clear();
-                if (result != null)
-                    DoriNarxiList.Items.Add(result.DoriNomi + "\t\t" + result.Narx);
-                else
-                    DoriNarxiList.Items.Add("Dori narxi aniqlanmadi!!!");
+                if(SinonimlarList.SelectedItem != null)
+                {
+                    var item = SinonimlarList.SelectedItem.ToString();
+                    var result = doriNarxlar.FirstOrDefault(a => a.DoriNomi.Contains(item));
+                    DoriNarxiList.Items.Clear();
+                    if (result != null)
+                        DoriNarxiList.Items.Add("Dori nomi: " + result.DoriNomi +
+                            "\n Dori narxi: " + result.Narx +
+                            "\n Ishlab chiqaruvchi: " + result.IshlabChiqaruvchi +
+                            "\n Jami: " + result.Jami);
+                    else
+                        DoriNarxiList.Items.Add("Dori narxi aniqlanmadi!!!");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
                         
+        }
+
+        private void DoriNarxiList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
