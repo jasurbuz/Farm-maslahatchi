@@ -31,16 +31,16 @@ namespace Farm_Maslahatchi
         {
             dorilar = await Sinonim.GetAll();
             doriNarxlar = await Dori.GetAll();
-            foreach (var item in doriNarxlar)
-            {
-                DoriNarxiList.Items.Add(item.DoriNomi);
-            }
+            //foreach (var item in doriNarxlar)
+            //{
+            //    DoriNarxiList.Items.Add(item.DoriNomi + "\t\t" + item.Narx);
+            //}
         }
 
         private void chiqarish(IEnumerable<DoriSinonim> doriSinonims)
         {
             DorilarList.Items.Clear();
-            var yuztacha = doriSinonims.Take(100);
+            var yuztacha = doriSinonims.Take(200);
             foreach (var item in yuztacha)
             {
                 DrugList_UserControl drugList_User = new DrugList_UserControl();
@@ -94,6 +94,10 @@ namespace Farm_Maslahatchi
                     SinonimlarList.Items.Add(syn.XalqaroNomi);
                 }
             }
+            else
+            {
+                SinonimlarList.Items.Add("Dori sinonimlari topilmadi!!!");
+            }
         }
 
         private void synonimsList_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,8 +106,11 @@ namespace Farm_Maslahatchi
             {
                 var item = SinonimlarList.SelectedItem.ToString();
                 var result = doriNarxlar.FirstOrDefault(a => a.DoriNomi.Contains(item));
+                DoriNarxiList.Items.Clear();
                 if (result != null)
-                    DoriNarxiList.Items.Add(result);
+                    DoriNarxiList.Items.Add(result.DoriNomi + "\t\t" + result.Narx);
+                else
+                    DoriNarxiList.Items.Add("Dori narxi aniqlanmadi!!!");
             }
             catch (Exception ex)
             {

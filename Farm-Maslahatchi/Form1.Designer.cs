@@ -161,14 +161,14 @@ namespace Farm_Maslahatchi
             // search_txt
             // 
             this.search_txt.BackColor = System.Drawing.Color.DodgerBlue;
-            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.search_txt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.search_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_txt.ForeColor = System.Drawing.Color.White;
             this.search_txt.Location = new System.Drawing.Point(0, 0);
             this.search_txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(374, 41);
+            this.search_txt.Size = new System.Drawing.Size(374, 34);
             this.search_txt.TabIndex = 0;
             this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
             // 
