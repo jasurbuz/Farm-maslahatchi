@@ -35,6 +35,7 @@ namespace Farm_Maslahatchi
 
         private void chiqarish(IEnumerable<DoriSinonim> doriSinonims)
         {
+            drugList.Items.Clear();
             var yuztacha = doriSinonims.Take(100);
             foreach (var item in yuztacha)
             {
