@@ -31,18 +31,22 @@ namespace Farm_Maslahatchi
         {
             dorilar = await Sinonim.GetAll();
             doriNarxlar = await Dori.GetAll();
+            foreach (var item in doriNarxlar)
+            {
+                DoriNarxiList.Items.Add(item.DoriNomi);
+            }
         }
 
         private void chiqarish(IEnumerable<DoriSinonim> doriSinonims)
         {
-            drugList.Items.Clear();
+            DorilarList.Items.Clear();
             var yuztacha = doriSinonims.Take(100);
             foreach (var item in yuztacha)
             {
                 DrugList_UserControl drugList_User = new DrugList_UserControl();
                 drugList_User.FillUserControl(item);
                 drugList_User.Dock = DockStyle.Top;
-                drugList.Items.Add(item.SavdoNomiVaSinonimi);
+                DorilarList.Items.Add(item.SavdoNomiVaSinonimi);
             }
         }
 
@@ -56,7 +60,7 @@ namespace Farm_Maslahatchi
             try
             {
                 IEnumerable<DoriSinonim> result;
-                drugList.Controls.Clear();
+                DorilarList.Controls.Clear();
                 if (search_txt.Text.Length > 1)
                 {
                     result = dorilar.Where(p => p.SavdoNomiVaSinonimi.Contains(search_txt.Text));
@@ -77,9 +81,9 @@ namespace Farm_Maslahatchi
 
         private void drugList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var item = drugList.SelectedItem.ToString();
+            var item = DorilarList.SelectedItem.ToString();
             var res = dorilar.Where(a => a.SavdoNomiVaSinonimi.Contains(item));
-            synonimsList.Items.Clear();
+            SinonimlarList.Items.Clear();
             if(res != null)
             {
                 foreach (var syn in res)
@@ -87,7 +91,7 @@ namespace Farm_Maslahatchi
                     SynonimsItem_UC synonimsItem = new SynonimsItem_UC();
                     synonimsItem.directLabel(syn.SavdoNomiVaSinonimi);
                     synonimsItem.Dock = DockStyle.Top;
-                    synonimsList.Items.Add(syn.SavdoNomiVaSinonimi);
+                    SinonimlarList.Items.Add(syn.XalqaroNomi);
                 }
             }
         }
@@ -96,8 +100,8 @@ namespace Farm_Maslahatchi
         {
             try
             {
-                var item = synonimsList.SelectedItem.ToString();
-                var result = doriNarxlar.FirstOrDefault(a => a.DoriNomi == item);
+                var item = SinonimlarList.SelectedItem.ToString();
+                var result = doriNarxlar.FirstOrDefault(a => a.DoriNomi.Contains(item));
                 if (result != null)
                     DoriNarxiList.Items.Add(result);
             }

@@ -38,8 +38,8 @@ namespace Farm_Maslahatchi
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.search_txt = new System.Windows.Forms.TextBox();
-            this.drugList = new System.Windows.Forms.ListBox();
-            this.synonimsList = new System.Windows.Forms.ListBox();
+            this.DorilarList = new System.Windows.Forms.ListBox();
+            this.SinonimlarList = new System.Windows.Forms.ListBox();
             this.DoriNarxiList = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -57,9 +57,9 @@ namespace Farm_Maslahatchi
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.drugList, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.DorilarList, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.synonimsList, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.SinonimlarList, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.DoriNarxiList, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -172,35 +172,35 @@ namespace Farm_Maslahatchi
             this.search_txt.TabIndex = 0;
             this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
             // 
-            // drugList
+            // DorilarList
             // 
-            this.drugList.BackColor = System.Drawing.Color.DodgerBlue;
-            this.drugList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.drugList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.drugList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drugList.ForeColor = System.Drawing.Color.White;
-            this.drugList.FormattingEnabled = true;
-            this.drugList.ItemHeight = 29;
-            this.drugList.Location = new System.Drawing.Point(3, 129);
-            this.drugList.Name = "drugList";
-            this.drugList.Size = new System.Drawing.Size(374, 654);
-            this.drugList.TabIndex = 11;
-            this.drugList.SelectedIndexChanged += new System.EventHandler(this.drugList_SelectedIndexChanged);
+            this.DorilarList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.DorilarList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DorilarList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DorilarList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DorilarList.ForeColor = System.Drawing.Color.White;
+            this.DorilarList.FormattingEnabled = true;
+            this.DorilarList.ItemHeight = 29;
+            this.DorilarList.Location = new System.Drawing.Point(3, 129);
+            this.DorilarList.Name = "DorilarList";
+            this.DorilarList.Size = new System.Drawing.Size(374, 654);
+            this.DorilarList.TabIndex = 11;
+            this.DorilarList.SelectedIndexChanged += new System.EventHandler(this.drugList_SelectedIndexChanged);
             // 
-            // synonimsList
+            // SinonimlarList
             // 
-            this.synonimsList.BackColor = System.Drawing.Color.DodgerBlue;
-            this.synonimsList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.synonimsList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.synonimsList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.synonimsList.ForeColor = System.Drawing.Color.White;
-            this.synonimsList.FormattingEnabled = true;
-            this.synonimsList.ItemHeight = 29;
-            this.synonimsList.Location = new System.Drawing.Point(383, 129);
-            this.synonimsList.Name = "synonimsList";
-            this.synonimsList.Size = new System.Drawing.Size(437, 654);
-            this.synonimsList.TabIndex = 12;
-            this.synonimsList.SelectedIndexChanged += new System.EventHandler(this.synonimsList_SelectedIndexChanged);
+            this.SinonimlarList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.SinonimlarList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SinonimlarList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SinonimlarList.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SinonimlarList.ForeColor = System.Drawing.Color.White;
+            this.SinonimlarList.FormattingEnabled = true;
+            this.SinonimlarList.ItemHeight = 29;
+            this.SinonimlarList.Location = new System.Drawing.Point(383, 129);
+            this.SinonimlarList.Name = "SinonimlarList";
+            this.SinonimlarList.Size = new System.Drawing.Size(437, 654);
+            this.SinonimlarList.TabIndex = 12;
+            this.SinonimlarList.SelectedIndexChanged += new System.EventHandler(this.synonimsList_SelectedIndexChanged);
             // 
             // DoriNarxiList
             // 
@@ -250,8 +250,8 @@ namespace Farm_Maslahatchi
         private System.Windows.Forms.TextBox search_txt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox drugList;
-        private System.Windows.Forms.ListBox synonimsList;
+        private System.Windows.Forms.ListBox DorilarList;
+        private System.Windows.Forms.ListBox SinonimlarList;
         private System.Windows.Forms.ListBox DoriNarxiList;
     }
 }
