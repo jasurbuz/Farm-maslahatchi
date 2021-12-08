@@ -38,13 +38,13 @@ namespace Farm_Maslahatchi
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.search_txt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.DorilarList = new System.Windows.Forms.ListBox();
             this.SinonimlarList = new System.Windows.Forms.ListBox();
             this.DoriNarxiList = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.search_txt = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -175,6 +175,32 @@ namespace Farm_Maslahatchi
             this.panel6.Size = new System.Drawing.Size(374, 39);
             this.panel6.TabIndex = 0;
             // 
+            // search_txt
+            // 
+            this.search_txt.BackColor = System.Drawing.Color.White;
+            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.search_txt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.search_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_txt.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.search_txt.Location = new System.Drawing.Point(137, 0);
+            this.search_txt.Name = "search_txt";
+            this.search_txt.Size = new System.Drawing.Size(237, 45);
+            this.search_txt.TabIndex = 3;
+            this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 38);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Qidirish:";
+            // 
             // DorilarList
             // 
             this.DorilarList.BackColor = System.Drawing.Color.DodgerBlue;
@@ -243,32 +269,6 @@ namespace Farm_Maslahatchi
             this.label1.Size = new System.Drawing.Size(305, 58);
             this.label1.TabIndex = 4;
             this.label1.Text = "Farm Maslahatchi";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 39);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Qidirish:";
-            // 
-            // search_txt
-            // 
-            this.search_txt.BackColor = System.Drawing.Color.White;
-            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.search_txt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.search_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_txt.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.search_txt.Location = new System.Drawing.Point(142, 0);
-            this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(232, 45);
-            this.search_txt.TabIndex = 3;
-            this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
             // 
             // Farm_maslahatchi
             // 
