@@ -6,6 +6,7 @@
 
 #  Download
 ![изображение](https://github.com/jasurbuz/AxsSkins/assets/81855769/80692dfa-f2d7-43f3-958b-71b0800a2a72)
+![изображение](https://github.com/jasurbuz/AxsSkins/assets/81855769/432050f2-df35-44cd-b332-5129f619d092)
 
 - Password: 2023
 
